@@ -32,7 +32,7 @@
             die("Connection failed: " . mysqli_connect_error());
         }
 
-        $sql = "SELECT name, phone, address, card_number, expiry_month, expiry_year, cvv FROM payments";
+        $sql = "SELECT name, phone, address, card_number, expiry_month, expiry_year, cvv FROM payment";
         $result = $conn->query($sql);
 
         if(!$result) {
