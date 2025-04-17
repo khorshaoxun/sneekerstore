@@ -18,7 +18,7 @@
     $expiry_year = $_POST['expiry_year'];
     $cvv = $_POST['cvv'];
 
-    $sql = "INSERT INTO payments (name, phone, address, card_number, expiry_month, expiry_year, cvv) VALUES ('$name', '$phone', '$address', '$card_number', '$expiry_month', '$expiry_year', '$cvv')";
+    $sql = "INSERT INTO payment (name, phone, address, card_number, expiry_month, expiry_year, cvv) VALUES ('$name', '$phone', '$address', '$card_number', '$expiry_month', '$expiry_year', '$cvv')";
     //VALUES('$name', '$phone', '$address', '$card_number', '$expiry_month', '$expiry_year', '$cvv');
 
     if ($conn->query($sql) === TRUE) {
